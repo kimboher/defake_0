@@ -22,23 +22,21 @@
 - **Duplicate-claim defense:** Cross-carrier comparison via **hash-only** registries/APIs—no claimant data exchange.
 - **Zero-friction claims:** DFIC, a 24/7 conversational agent that guides customers step by step and ensures complete submissions.
 
-## Agent Architecture (Responsibilities)
-- **A0 · DFIC Guidance Agent** — Conversational intake; guides claimants; ensures completeness; multilingual.
-- **A1 · Policy/Checklist Agent** — Expands insurer policy into a per-incident checklist; outputs `policy_hash` for audit; runs in **Shade/TEE** for sealed execution.
-- **A2 · Evidence Capture Coach** — Guides capture of photos/videos; ensures usable evidence before submission.
-- **A3 · Media Integrity Agent (Shade/TEE)** — Performs media hashing (SHA-256, Merkle root) and runs **ML integrity checks** for tampering/deepfakes inside a TEE; produces `method_version` + attestation.
-- **A4 · Attestation & Anchor Agent** — Signs `{policy_hash, merkle_root, media_sha256, method_version}` and anchors it on **NEAR**; issues Proof Receipt (`proof_id`, `tx_hash`).
-- **A5 · Duplicate-Claim Matching Agent** — Privacy-preserving cross-carrier hash registry; later extended via **NEAR Intents**.
-- **A6 · Completeness Gate Agent** — Validates all checklist items + receipts are present; sends fixes back to Guidance Agent.
-- **A7 · Claims Packager Agent** — Produces claim package (forms, receipts, NEAR tx links) for adjusters.
-- **A8 · Adjuster Copilot** — Summarizes claim evidence, highlights anomalies, shows anchored receipts & attestations.
-- **A9 · Public Verifier Agent** — Anyone can re-hash submitted media and check on-chain records → green/red + tx link.
-- **A10 · Analytics & Risk Agent** — Aggregates fraud metrics (tamper detections, duplicates, pass/fail rates); can run in Shade/TEE with attested outputs.
+## Agent Architecture (simple view)
+- Guidance Agent — Conversational bot to collect claim info, guide uploads, and provide emergency support.
+
+-Verification Agent — Hashes and checks uploaded media with ML; outputs proof_id, merkle_root, and a NEAR-anchored receipt.
+
+-Privacy Agent — Runs inside Shade/TEE; ensures sensitive data never leaks.
+
+-Duplicate Check Agent — Detects reused media across claims; later extended via NEAR Intents.
+
+-Adjuster Copilot — Summarizes evidence, flags anomalies, and links proofs for insurer staff.
 
 ## Minimal Artifacts
 - **On-chain (NEAR):** `{proof_id, merkle_root, media_sha256, policy_hash, method_version}`
 - **Off-chain (DB):** Claim JSON, checklist status, receipt JSON, reason codes, duplicate-match metadata
-- **TEE (optional):** Remote attestation for integrity and ML checks
+- **TEE:** Remote attestation for integrity and ML checks
 
 ## Privacy & Integrity Posture
 - Raw media never on-chain; proofs only.
@@ -70,17 +68,7 @@ defake/
     └── architecture.md
 ```
 
-## Getting Started
 
-- See `apps/miniapp/README.md` for the Telegram/Web Mini App scaffold.
-- See `contracts/near/README.md` for the `anchor_proof` contract concept.
-- See `services/api/README.md` for draft API endpoints.
-- See `docs/architecture.md` for the agent flow overview.
-
-## Next Steps
-
-- Fill in implementation details per component.
-- Decide on deployment targets and CI.
 
 
 
