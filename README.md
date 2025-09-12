@@ -44,6 +44,16 @@
 - Receipts bind outcomes to **specific method/policy versions** for auditability.
 - Shade/TEE provides verifiable, sealed execution of ML checks and policy enforcement.
 
+- Contract Features:
+✅ anchor() - Store commitment hashes with metadata
+✅ get_anchor() - Retrieve anchor records
+✅ verify() - Verify commitment hashes
+✅ Duplicate prevention - Can't anchor same ID twice
+✅ Event logging - Emits anchor creation events
+✅ Validation - Proper hash format checking
+✅ Pagination - Get anchors by creator
+✅ Full test suite included
+
 ## High-Level Roadmap (No Code)
 1. **Foundations:** DFIC intake + Proof Receipts + Verify page; single-tenant duplicate checks.
 2. **Attestation:** Media Integrity Agent + Policy Agent run inside Shade/TEE; receipts include attestation + model version.
@@ -67,6 +77,7 @@ defake/
 └── docs/
     └── architecture.md
 ```
+
 
 
 
