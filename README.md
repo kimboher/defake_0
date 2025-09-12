@@ -44,8 +44,7 @@
 - Receipts bind outcomes to **specific method/policy versions** for auditability.
 - Shade/TEE provides verifiable, sealed execution of ML checks and policy enforcement.
   
-
-  ##Contract Features:
+## Contract Features:
 - anchor() - Store commitment hashes with metadata
 - get_anchor() - Retrieve anchor records
 - verify() - Verify commitment hashes
@@ -78,6 +77,7 @@ defake/
 └── docs/
     └── architecture.md
 ```
+
 
 
 
