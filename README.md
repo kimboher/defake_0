@@ -1,3 +1,7 @@
+
+<img width="1699" height="1275" alt="image" src="https://github.com/user-attachments/assets/f75f2c90-d54f-4de3-ab37-4a939c29c173" />
+
+
 # Defake — Agentic Media Integrity for Insurance
 
 > **Mission.** Help insurers adapt to the AI era by turning fragile media into **private, provable, audit-ready evidence**, stopping deepfake/tampering fraud (>$200B/yr), preventing **duplicate claims across carriers without sharing PII**, and making claim submission **effortless** via a conversational agent.
@@ -71,4 +75,5 @@ defake/
 
 - Fill in implementation details per component.
 - Decide on deployment targets and CI.
+
 
