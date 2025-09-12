@@ -4,6 +4,8 @@
 
 # Defake — Agentic Media Integrity for Insurance
 
+live demo https://defake-ealnhlwuc-kims-projects-aaaddc63.vercel.app/
+
 <img width="1699" height="1275" alt="image" src="https://github.com/user-attachments/assets/f75f2c90-d54f-4de3-ab37-4a939c29c173" />
 <img width="1704" height="593" alt="image" src="https://github.com/user-attachments/assets/e748a573-4b00-4fa4-a833-f9045798abaf" />
 <img width="1694" height="1159" alt="image" src="https://github.com/user-attachments/assets/5dacd419-78c9-4e55-998a-815084df724b" />
@@ -77,6 +79,7 @@ defake/
 └── docs/
     └── architecture.md
 ```
+
 
 
 
