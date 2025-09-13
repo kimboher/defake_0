@@ -1,0 +1,19 @@
+[package]
+name = "defake_anchor"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+near-sdk = "5.17.2"
+borsh = { version = "1.5", features = ["derive"] }
+wee_alloc = "0.4.5"
+
+# Keep the profile modest; some toolchains + flags combos can upset the VM loader.
+[profile.release]
+opt-level = "z"
+lto = true
+codegen-units = 1
+panic = "abort"
