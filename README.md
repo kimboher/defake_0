@@ -56,7 +56,7 @@ live demo https://defake-ealnhlwuc-kims-projects-aaaddc63.vercel.app/
 - Pagination - Get anchors by creator
 - Full test suite included
 
-## High-Level Roadmap (No Code)
+## High-Level Roadmap 
 1. **Foundations:** DFIC intake + Proof Receipts + Verify page; single-tenant duplicate checks.
 2. **Attestation:** Media Integrity Agent + Policy Agent run inside Shade/TEE; receipts include attestation + model version.
 3. **Cross-carrier:** Duplicate-claim Matching Agent extended with **NEAR Intents**; Adjuster Copilot live.
@@ -79,6 +79,7 @@ defake/
 └── docs/
     └── architecture.md
 ```
+
 
 
 
