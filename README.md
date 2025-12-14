@@ -6,9 +6,7 @@
 
 live demo https://youtube.com/shorts/tCVrBi8PjH0
 
-<img width="1699" height="1275" alt="image" src="https://github.com/user-attachments/assets/f75f2c90-d54f-4de3-ab37-4a939c29c173" />
-<img width="1704" height="593" alt="image" src="https://github.com/user-attachments/assets/e748a573-4b00-4fa4-a833-f9045798abaf" />
-<img width="1694" height="1159" alt="image" src="https://github.com/user-attachments/assets/5dacd419-78c9-4e55-998a-815084df724b" />
+<img width="423" height="688" alt="Screenshot 2025-12-14 080724" src="https://github.com/user-attachments/assets/ce5031a0-8128-43f7-8a92-b1880b827dd3" />
 
 
 
@@ -79,6 +77,7 @@ defake/
 └── docs/
     └── architecture.md
 ```
+
 
 
 
