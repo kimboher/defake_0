@@ -2,7 +2,7 @@
 
 
 
-# Defake — Agentic Media Integrity for Insurance
+# Defake — Defakes is a gamified Truth Protocol that crowdsources deepfake detection via a viral Telegram prediction market, anchoring forensic chain-of-custody on Base.
 
 live demo https://youtube.com/shorts/tCVrBi8PjH0
 
@@ -80,6 +80,7 @@ defake/
 └── docs/
     └── architecture.md
 ```
+
 
 
 
